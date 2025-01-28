@@ -3,26 +3,26 @@
 ##  Overview
 This project demonstrates setting up a **secure web server on Azure** using **Azure Virtual Network (VNet), Virtual Machine (VM), Azure Firewall, and Bastion**.
 
-##  Technologies Used
+##  Technologies Used:
 - Azure Virtual Network (VNet), Virtual Machine (VM)
 - Azure Firewall, Azure Bastion, DNAT Rules
 - Nginx Web Server (on Ubuntu)
 - Linux commands for configuration
 
-##  Steps Involved
-Created a Virtual Network (VNet) with a subnet.
+##  Steps Involved:
+1. Created a Virtual Network (VNet) with a subnet.
 
--Deployed a Virtual Machine (VM) inside the subnet.
+2. Deployed a Virtual Machine (VM) inside the subnet.
 
--Installed & Configured Nginx on the VM by using to serve a static HTML page.
+3. Installed & Configured Nginx on the VM by using to serve a static HTML page.
 
-- Set Up Azure Bastion for secure, browser-based access to the VM (without exposing SSH/RDP).
+4. Set Up Azure Bastion for secure, browser-based access to the VM (without exposing SSH/RDP).
 
-- Configured Azure Firewall to protect the network and control traffic.
+5. Configured Azure Firewall to protect the network and control traffic.
 
-- Implemented DNAT Rules to forward HTTP requests to the VM securely.
+6. Implemented DNAT Rules to forward HTTP requests to the VM securely.
 
--Tested & Successfully Accessed the Web Server via the Firewall’s public IP.
+7. Tested & Successfully Accessed the Web Server via the Firewall’s public IP.
 
 ##  Linux Commands Used
 ```bash
