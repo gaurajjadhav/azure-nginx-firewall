@@ -32,28 +32,22 @@ During the setup and configuration, I used the following Linux commands:
 sudo apt update
 sudo apt install nginx -y
 
-🔹 Checking Nginx Status:
-```bash
+# Checking Nginx Status:
 sudo systemctl status nginx
 
-🔹 Restarting Nginx After Configuration Changes:
-```bash
+# Restarting Nginx After Configuration Changes:
 sudo systemctl restart nginx
 
-🔹 Editing the Default HTML Page:
-```bash
+# Editing the Default HTML Page:
 sudo nano /var/www/html/index.html
 
-🔹 Testing the Web Server Locally:
-```bash
+# Testing the Web Server Locally:
 curl localhost:80
 
-🔹 Checking If Port 80 Is Open:
-```bash
+# Checking If Port 80 Is Open:
 sudo netstat -tulnp | grep :80
 
-🔹 Verifying Nginx Configuration:
-```bash
+# Verifying Nginx Configuration:
 sudo nginx -t
 
 ## Project Outcome:
