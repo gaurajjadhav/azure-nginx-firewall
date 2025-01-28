@@ -31,5 +31,7 @@ sudo systemctl start nginx
 sudo nano /var/www/html/index.html
 curl localhost:80
 
-##  Accessing the Web Page
-Visit http://20.231.67.26:80
+
+📡 Accessing the Web Page
+Visit http://20.231.67.26:4000
+
