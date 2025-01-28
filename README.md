@@ -28,25 +28,32 @@ This project built and configured to a secure web server on Microsoft Azure usin
 During the setup and configuration, I used the following Linux commands:
 
 🔹 Updating and Installing Nginx:
+```bash
 sudo apt update
 sudo apt install nginx -y
 
 🔹 Checking Nginx Status:
+```bash
 sudo systemctl status nginx
 
 🔹 Restarting Nginx After Configuration Changes:
+```bash
 sudo systemctl restart nginx
 
 🔹 Editing the Default HTML Page:
+```bash
 sudo nano /var/www/html/index.html
 
 🔹 Testing the Web Server Locally:
+```bash
 curl localhost:80
 
 🔹 Checking If Port 80 Is Open:
+```bash
 sudo netstat -tulnp | grep :80
 
 🔹 Verifying Nginx Configuration:
+```bash
 sudo nginx -t
 
 ## Project Outcome:
