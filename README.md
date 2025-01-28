@@ -24,11 +24,17 @@ This project built and configured to a secure web server on Microsoft Azure usin
 
 7. Tested & Successfully Accessed the Web Server via the Firewall’s public IP.
 
+
+## Project Outcome:
+This project strengthened my hands-on experience with Azure networking, security, and cloud infrastructure while enhancing my knowledge of Linux commands for server management.
+
+## 📡 Accessing the Web Page
+Visit http://20.231.67.26:4000
+
 ## Linux Commands Used:
 During the setup and configuration, I used the following Linux commands:
-
-🔹 Updating and Installing Nginx:
 ```bash
+# Updating and Installing Nginx:
 sudo apt update
 sudo apt install nginx -y
 
@@ -50,9 +56,4 @@ sudo netstat -tulnp | grep :80
 # Verifying Nginx Configuration:
 sudo nginx -t
 
-## Project Outcome:
-This project strengthened my hands-on experience with Azure networking, security, and cloud infrastructure while enhancing my knowledge of Linux commands for server management.
-
-## 📡 Accessing the Web Page
-Visit http://20.231.67.26:4000
 
