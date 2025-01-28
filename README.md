@@ -10,11 +10,19 @@ This project demonstrates setting up a **secure web server on Azure** using **Az
 - Linux commands for configuration
 
 ##  Steps Involved
-1. Created a Virtual Network and Subnet.
-2. Deployed a Virtual Machine and installed Nginx.
-3. Configured Azure Firewall and DNAT rules.
-4. Set up Bastion for secure access.
-5. Hosted a static HTML page on Nginx.
+Created a Virtual Network (VNet) with a subnet.
+
+-Deployed a Virtual Machine (VM) inside the subnet.
+
+-Installed & Configured Nginx on the VM by using to serve a static HTML page.
+
+- Set Up Azure Bastion for secure, browser-based access to the VM (without exposing SSH/RDP).
+
+- Configured Azure Firewall to protect the network and control traffic.
+
+- Implemented DNAT Rules to forward HTTP requests to the VM securely.
+
+-Tested & Successfully Accessed the Web Server via the Firewall’s public IP.
 
 ##  Linux Commands Used
 ```bash
@@ -23,5 +31,5 @@ sudo systemctl start nginx
 sudo nano /var/www/html/index.html
 curl localhost:80
 
-Accessing the Web Page
+##  Accessing the Web Page
 Visit http://20.231.67.26:80
